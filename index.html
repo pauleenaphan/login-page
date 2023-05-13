@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <link rel = "style.sheet" href = "style.css">
+    </head>
+    <body>
+        <img src="surprisedcat.png" alt="surprisedcat">
+        <!-- Whole page -->
+        <div class = "signup">
+            <!-- Top right header section -->
+            <div class="header">
+                <h1> Sign up for Meowscape today!</h1>
+                <h2> You know you want to </h2>
+            </div>
+
+            <!-- Sign up section -->
+            <div class="signupform">
+                <form action="/signup_page">
+                    <ul>
+                        <li>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="user-name" required>
+                        </li>
+                        <li>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="user-name" required>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <!-- [0-9] means the type of number that is allowed to be typed {3} means the amount of numbers that can be typed must be follwoed by a = -->
+                            <input type="number" id="phone-num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </li>
+                        <li>
+                            <label for="password">Password</label>
+                            <input type="text" id="password">
+                        </li>
+                        <li>
+                            <label for="password-confirm">Confirm Password</label>
+                            <input type="text" id="password-confirm">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <!-- Create account button section -->
+            <div>
+                <button> Create an Account</button>
+                <p>Already have an account? <a href="url">Login</a></p>
+            </div>
+        </div>
+    </body>
+</html>
