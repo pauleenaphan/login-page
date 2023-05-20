@@ -1,7 +1,9 @@
 body{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 0;
+    background-color: lightgray;
 }
 
 .signup{
@@ -16,13 +18,11 @@ body{
     flex-direction: column;
     min-width: auto;
     padding: 160px 50px 10px 50px;
-    
     background-color: yellow;
 }
 
 .signupform{
     background-color: pink;
-
 }
 
 ul{
@@ -30,6 +30,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     padding: 30px 50px;
+    margin: 0;
 }
 
 li{
@@ -49,20 +50,23 @@ input[type]{
    margin-top: 5px;
 }
 
-.footer{
+.btn_section{
     display: flex;
-    flex: 1;
     flex-direction: column;
     background-color: lightblue;
     padding: 50px;
+    height: 100%;
+    flex-grow: 1;
 }
 
-button{
+input[type = submit]{
     font-size: 25px;
-    width: 300px;
+    width: 200px;
+    padding: 10px;
     border-radius: 10px;
 }
 
 p{
     font-size: 20px;
 }
+
