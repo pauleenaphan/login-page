@@ -5,18 +5,18 @@
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <img src="surprisedcat.png" alt="surprisedcat">
+        <img src="surprisedcat.png" alt="surprisedcat"> 
         <!-- Whole page -->
         <div class = "signup">
+           
             <!-- Top right header section -->
             <div class="header">
                 <h1> Sign up for Meowscape today!</h1>
                 <h2> You know you want to </h2>
             </div>
-
-            <!-- Sign up section -->
-            <div class="signupform">
-                <form action="/signup_page">
+            <form action="/signup_page">
+                <!-- Sign up section -->
+                <div class="signupform">
                     <ul>
                         <li>
                             <label for="first-name">First Name</label>
@@ -37,21 +37,26 @@
                         </li>
                         <li>
                             <label for="password">Password</label>
-                            <input type="text" id="password">
+                            <input type="password" id="password" required>
                         </li>
                         <li>
                             <label for="password-confirm">Confirm Password</label>
-                            <input type="text" id="password-confirm">
+                            <input type="password" id="password-confirm" required>
                         </li>
                     </ul>
-                </form>
-            </div>
+                </div>
 
-            <!-- Create account button section -->
-            <div class="footer">
-                <button> Create an Account</button>
-                <p>Already have an account? <a href="url">Login</a></p>
-            </div>
+                <!-- Create account button section -->
+                <div class="btn_section">
+                    <input type="submit" value="Create Account"/>    
+                    <p>Already have an account? <a href="url">Login</a></p>
+                </div>
+            </form>
         </div>
+<!--  
+    <div class="footer">
+            <p>Copyright @ 2023 Pauleena Phan</p>
+        </div>
+ -->
     </body>
 </html>
