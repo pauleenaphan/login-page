@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    /* Flex 1 will allow the whole signup section stretch all the way horizontally based on the user's screen */
+    flex: 1;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    padding: 160px 50px 10px 50px;
+    
+    background-color: yellow;
+}
+
+.signupform{
+    background-color: pink;
+
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+}
+
+li{
+    font-size: 20px;
+    width: 50%;
+    margin: 10px 0px;
+}
+
+/* Changes the size of the input bars  */
+input[type]{
+    /* flex will allow the input boxes to be below the titles */
+    /* this happens bc input is a default lnline so when we make it flex, it becomes a box */
+    /* this also happens when we do display flex to the label, it becomes a box */
+   display: flex;
+   width: 150px;
+   padding: 5px;
+   margin-top: 5px;
+}
+
+.footer{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: lightblue;
+    padding: 50px;
+}
+
+button{
+    font-size: 25px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 20px;
+}
