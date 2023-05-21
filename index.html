@@ -3,6 +3,7 @@
 <html lang = "en">
     <head>
         <link rel = "stylesheet" href = "style.css">
+        <script src = "script.js" defer></script>
     </head>
     <body>
         <img src="coolcat.png.jpg" alt="coolcat"> 
@@ -23,11 +24,11 @@
                     <ul>
                         <li>
                             <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="user-name" required>
+                            <input type="text" id="first_name" name="user_name" required>
                         </li>
                         <li>
                             <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="user-name" required>
+                            <input type="text" id="last_name" name="user_name" required>
                         </li>
                         <li>
                             <label for="email">Email</label>
@@ -40,18 +41,18 @@
                         </li>
                         <li>
                             <label for="password">Password</label>
-                            <input type="password" id="password" required>
+                            <input type="password" id="password" onchange="check_pass();" required>
                         </li>
                         <li>
                             <label for="password-confirm">Confirm Password</label>
-                            <input type="password" id="password-confirm" required>
+                            <input type="password" id="password_confirm" onchange="check_pass();" required>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Create account button section -->
                 <div class="btn_section">
-                    <input type="submit" value="Create Account"/>    
+                    <input type="submit" id="sub_btn" value="Create Account"/>    
                     <p>Already have an account? <a href="url">Login</a></p>
                 </div>
             </form>
