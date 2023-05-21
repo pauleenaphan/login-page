@@ -73,11 +73,15 @@ input[type = submit]{
     border-color: lightyellow;
 }
 
-/* When the user is clicks on the textbox the background will turn lightblue */
+/* When the user is clicks on the textbox there should be no border*/
 input[type]:focus{
     outline: none;
 }
 
+/* When the user passwords do not match, the line will be red */
+input[type = password].invalid{
+    border-bottom: 4px solid red;
+}
 
 p{
     font-size: 25px;
