@@ -39,7 +39,7 @@ li{
 }
 
 /* Changes the size of the input bars  */
-input[type = text], input[type = email], input[type = number], input[type = password]{
+input[type = text], input[type = email], input[type = tel], input[type = password]{
     /* flex will allow the input boxes to be below the titles */
     /* this happens bc input is a default lnline so when we make it flex, it becomes a box */
     /* this also happens when we do display flex to the label, it becomes a box */
