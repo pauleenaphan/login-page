@@ -1,7 +1,8 @@
 body{
     display: flex;
     flex-direction: row;
-    margin: 0px 100px;
+    flex-wrap: wrap;
+    margin: 0px;
     background-color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -16,7 +17,7 @@ body{
 .header{
     display: flex;
     flex-direction: column;
-    padding: 200px 50px 100px 50px;
+    padding: 50px;
     background-color: rgb(122, 107, 211);
 }
 
@@ -44,7 +45,7 @@ input[type = text], input[type = email], input[type = tel], input[type = passwor
     /* this happens bc input is a default lnline so when we make it flex, it becomes a box */
     /* this also happens when we do display flex to the label, it becomes a box */
    display: flex;
-   width: 400px;
+   width: 70%;
    padding: 10px;
    margin-top: 10px;
    border: none;
@@ -58,10 +59,8 @@ label{
 }
 
 .btn_section{
-    display: flex;
-    flex-direction: column;
     background-color: rgb(122, 107, 211);
-    padding: 50px;
+    padding: 50px; 
 }
 
 input[type = submit]{
@@ -89,7 +88,7 @@ p{
 
 img{
    max-height: 100%;
-   min-width: 40%;
+   width: 40%;
 }
 
 #text{
