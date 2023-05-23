@@ -51,7 +51,7 @@ input[type = text], input[type = email], input[type = tel], input[type = passwor
    border: none;
    border-bottom: 4px solid black;
    background-color: rgb(141, 129, 209);
-   font-size: 25px;
+   font-size: 20px;
 }
 
 label{
@@ -79,7 +79,7 @@ input[type]:focus{
 
 /* When the user passwords do not match, the line will be red */
 input[type = password].invalid{
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid red; 
 }
 
 p{
@@ -93,7 +93,7 @@ img{
 
 #text{
     padding: 30px 50px 0px;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
 }
 
