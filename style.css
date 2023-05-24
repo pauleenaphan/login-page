@@ -23,6 +23,8 @@ body{
 
 .signupform{
     background-color: rgb(141, 129, 209);
+    display: flex;
+    flex-direction: column; 
 }
 
 ul{
@@ -60,7 +62,8 @@ label{
 
 .btn_section{
     background-color: rgb(122, 107, 211);
-    padding: 50px; 
+    padding: 50px 50px 200px 50px; 
+
 }
 
 input[type = submit]{
@@ -79,7 +82,7 @@ input[type]:focus{
 
 /* When the user passwords do not match, the line will be red */
 input[type = password].invalid{
-    border-bottom: 4px solid red; 
+    border-bottom: 4px solid red;
 }
 
 p{
